@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "Tribunal Penal Internacional, Lula, Putin, Brasil"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "674049d7-1189-4573-b2cd-23b901819ead",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
